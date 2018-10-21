@@ -3,7 +3,7 @@
 #include <utility>
 #include <string>
 #include <vector>
-
+#include "sol.h"
 
 using namespace std;
 
@@ -28,20 +28,24 @@ int main(int argc, char* argv[]){
 					i--;
 					continue;
 				}
-
+				
+				int x,y;
 				vector<pair<int,int>> rooks;
 				for(int j = 0; j < s.length(); j++){
 					if(s[j] >= 'a' && s[j] < 'i'){
-						int x = s[j] - 'a';
+						x = s[j] - 'a';
 						//read the next character, hoping that it's a number
-						int y = s[++j] - '1';
+						y = s[++j] - '1';
 						if(y > 7 || y < 0) throw invalid_argument("invalid rook coordinates");
-
-						char first = 'a' + x;
-						char second = '1' + y;
-						writer << first << second << endl;
+						
+						rooks.push_back(pair<int,int>(x,y));
 					}
 				}
+
+				pair<int,int> nextRook = Solution().findNextRook(rooks);
+				char first = 'a' + nextRook.first;
+				char second = '1' + nextRook.second;
+				writer << first << second << endl;
 			}
 		}
 		catch(const invalid_argument& a){

@@ -39,3 +39,59 @@ TEST_CASE("Checking my check rook function LOL"){
 	pair<int,int> t(6,7);
 	REQUIRE(checkRook(t, v) == true);
 }
+
+TEST_CASE( "Empty Board"){
+		vector<pair<int,int>> v;
+}
+
+TEST_CASE( "Malformed Input 1- full board"){
+
+}
+
+TEST_CASE( "Malformed Input 2 - initial rooks colliding"){
+
+}
+
+TEST_CASE( "Malformed Input 3 - multiple rooks on same square"){
+
+}
+
+TEST_CASE( "Misc. Rooks 1 - just one rook"){
+
+}
+
+TEST_CASE( "Misc. Rooks 2 - rooks close together"){
+
+}
+
+TEST_CASE( "Misc. Rooks 3 - rooks close to x = 0"){
+
+}
+
+TEST_CASE( "Misc. Rooks 4 - rooks close to y = 0"){
+
+}
+
+TEST_CASE( "Misc. Rooks 5 - rooks anywhere"){
+
+}
+
+TEST_CASE( "Misc. Rooks 6 - only 1 possible square"){
+
+}
+
+TEST_CASE( "Misc. Rooks 7 - only 1 possible square v2"){
+
+}
+
+TEST_CASE( "Fill board 1 - from empty"){
+
+}
+
+TEST_CASE( "Fill board 2 - from half-populated"){
+
+}
+
+TEST_CASE( "Fill board 3 - 2 placements"){
+
+}
