@@ -26,7 +26,7 @@ Solution should include:
 ## Installation Instructions
 
 1. Clone this repository onto local device
-2. Get the catch c++ testing framework: 
+2. Get the catch c++ testing framework (should already be part of the repo): 
 ```
 curl https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp --ouput catch.hpp
 ```
