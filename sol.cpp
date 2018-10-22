@@ -14,11 +14,6 @@ pair<int,int> Solution::findNextRook(vector<pair<int,int>>& rooks){
 	//actually maybe use hash table for the x, y, and to determine x,y position, check 
 	//if position is in the table
 
-	//basic edge case
-	if(rooks.size() > 7){
-		return pair<int,int>(-1,-1);
-	}
-
 	map<int,int> mx, my;
 	
 	for(int i = 0; i < rooks.size(); i++){
@@ -27,18 +22,19 @@ pair<int,int> Solution::findNextRook(vector<pair<int,int>>& rooks){
 	}
 	int x = -1, y = -1;
 	//get first valid x
-	for(int i = 0; i < 7; i++){
+	for(int i = 0; i < 8; i++){
 		if(mx.find(i) == mx.end()){
 			x = i;
 			break;
 		}
 	}
 	//get first valid y
-	for(int i = 0; i < 7; i++){
+	for(int i = 0; i < 8; i++){
 		if(my.find(i) == my.end()){
 			y = i;
 			break;
 		}
 	}
 	return pair<int,int>(x,y);
+	//return pair<int,int>(-1,-1);
 }
