@@ -40,9 +40,9 @@ g++ -std=c++11 -o testCases test.cpp sol.cpp
 
 ## Usage Instructions
 ### Input
-The program takes in a parameter as an input text file. The text file is structured such that the first line contains a single integer _n_ - the number of rook placement scenarios. Each of the following lines represent a single scenario, where the placements of the rooks are represented in standard [Chess Algebraic Notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)), with positions separated optionally by a space. 
+The program takes in a parameter as an input text file. The text file is structured such that the first line contains a single integer _n_ - the number of rook placement scenarios. Each of the following lines represent a single scenario to be calculated, where the placements of the rooks are represented in the line with standard [Chess Algebraic Notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)), each placement optionally separated with a space. 
 ### Output
-The program outputs the results into a file called `output.txt`, with the position of the rook to be placed represented in the same notation. Each rook placement for each scenario given is represented in a new line. 
+The program outputs the results into a file called `output.txt`, with the position of the rook to be placed represented in the same notation. Each rook placement for each scenario given is represented in a new line. If the program encounters a syntax error for the input file, it will notify the user and shutdown. If the program cannot calculate a certain scenario, xx will be printed for the output. 
 
 ### Example 
 Input:

@@ -43,8 +43,8 @@ int main(int argc, char* argv[]){
 				}
 
 				pair<int,int> nextRook = Solution().findNextRook(rooks);
-				char first = 'a' + nextRook.first;
-				char second = '1' + nextRook.second;
+				char first = (nextRook.first>-1)?('a' + nextRook.first):'x';
+				char second = (nextRook.second>-1)?('1' + nextRook.second):'x';
 				writer << first << second << endl;
 			}
 		}

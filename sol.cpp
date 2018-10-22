@@ -35,6 +35,7 @@ pair<int,int> Solution::findNextRook(vector<pair<int,int>>& rooks){
 			break;
 		}
 	}
+	if(x == -1 || y == -1) return pair<int,int>(-1,-1);
 	return pair<int,int>(x,y);
 	//return pair<int,int>(-1,-1);
 }
