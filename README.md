@@ -1,28 +1,5 @@
 # Tesla Question Implementation
 
-## Original Question
-
-Question:
-
-Let’s say we have a chessboard, which has the typical 8 x 8 square tiles.  The rook is a chess piece that can move horizontally and vertically across the entire board.  We want a program that will take a board with N number of rooks already placed, and for the program to place more rooks with the following rules.
- 
-
-Rules:
-
-Rooks must be placed in such a way that they don’t collide with each other. 
-The program should take input for a starting board configuration with N rooks placed.  (The starting set always conforms to the previous rule.)
-We would expect 8 total rooks (including the starting set) can always be placed without violating the rule.
-View the attached picture for 2 valid final rook configurations.
-  
-Solution should include:
-
-- Pick any programming language.
-- Unit tests
-- Source Code
-- README file
-- Explains how to install/run.
-- Sample input/output.
-
 ## Installation Instructions
 
 1. Clone this repository onto local device
